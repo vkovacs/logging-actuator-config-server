@@ -12,3 +12,7 @@ https://medium.com/swlh/spring-cloud-config-bus-auto-refresh-properties-for-clie
 ![call_monitor_endpoint.png](call_monitor_endpoint.png)
 
 https://cloud.spring.io/spring-cloud-config/multi/multi__push_notifications_and_spring_cloud_bus.html
+
+# Profiles:
+* To use config server by a file system backend use profile: `native`
+* To use config server by a jdbc backend use profile: `jdbc`
