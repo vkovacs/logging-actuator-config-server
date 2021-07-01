@@ -2,6 +2,25 @@
 
 A rabbitmq broker running on the default port on localhost.
 
+docker run -d --hostname my-rabbit --name some-rabbit -p 15672:15672 -p 5672:5672 rabbitmq:3-management
+docker run -e POSTGRES_PASSWORD=deb.deb -e POSTGRES_DB=config-db -p 5432:5432 -d postgres:latest
+
+In case of using jdbc backend the following table:
+```
+create table properties (
+    application varchar(255),
+    profile varchar(255),
+    label varchar(255),
+    key varchar(255),
+    value varchar(255)
+)
+```
+
+an example line looks like this:
+```
+insert into properties values ('logging', 'default', null, 'message', 'apple')
+```
+
 # Documentation
 https://cloud.spring.io/spring-cloud-config/reference/html/#_quick_start
 
