@@ -2,8 +2,14 @@
 
 A rabbitmq broker running on the default port on localhost.
 
+```
 docker run -d --hostname my-rabbit --name some-rabbit -p 15672:15672 -p 5672:5672 rabbitmq:3-management
+```
+
+In case of jdbc backend a postgres server:
+```
 docker run -e POSTGRES_PASSWORD=deb.deb -e POSTGRES_DB=config-db -p 5432:5432 -d postgres:latest
+```
 
 In case of using jdbc backend the following table:
 ```
