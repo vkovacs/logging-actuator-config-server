@@ -1,3 +1,7 @@
+# Prerequisites
+
+A rabbitmq broker running on the default port on localhost.
+
 # Documentation
 https://cloud.spring.io/spring-cloud-config/reference/html/#_quick_start
 
